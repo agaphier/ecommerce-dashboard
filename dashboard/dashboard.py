@@ -47,7 +47,7 @@ def create_rfm_df(df):
     return rfm_df
 # --------------- end healper functions ---------------
 
-all_df = pd.read_csv('dashboard\merged_df.csv')
+all_df = pd.read_csv('dashboard/merged_df.csv')
 
 # Convert datetime
 datetime_columns = ['order_purchase_timestamp','order_approved_at', 'order_delivered_customer_date']
