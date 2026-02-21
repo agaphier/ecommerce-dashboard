@@ -47,7 +47,7 @@ def create_rfm_df(df):
     return rfm_df
 # --------------- end healper functions ---------------
 
-all_df = pd.read_csv('merged_df.csv')
+all_df = pd.read_csv('dashboard/merged_df.csv')
 
 # Convert datetime
 datetime_columns = ['order_purchase_timestamp','order_approved_at', 'order_delivered_customer_date']
@@ -63,7 +63,7 @@ min_date = all_df["order_approved_at"].min()
 max_date = all_df["order_approved_at"].max()
 
 with st.sidebar:
-    st.image("logo.png")
+    st.image("dashboard/logo.png")
 
     date_range = st.date_input(
         label='Rentang Waktu',
